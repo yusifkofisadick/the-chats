@@ -1,0 +1,2840 @@
+*{
+    padding: none;
+    margin: 0 0 0 0;
+}
+
+
+
+::-webkit-scrollbar{
+    width: 12px;
+    display: none;
+
+}
+
+
+body{
+    background: rgb(17, 17, 17);;
+    color: white;
+    overflow: hidden;
+  
+}
+
+
+
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    .main{
+        width: 80%;
+        height: 100vh;
+        margin-left: 300px;
+        display: flex;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .left-bar{
+        height: 100vh;
+        width: 300px;
+        background: rgb(17, 17, 17);
+        overflow: hidden;
+        color: white;
+        position: fixed;
+        border-right: 2px solid rgb(0, 153, 255);
+        
+        
+
+
+        .profile-pic-active{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 3px solid greenyellow;
+            margin: 10px 5px 10px 10px;
+            overflow: hidden;
+            
+            
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+
+
+        .logo{
+            font-size: 30px;
+            margin-top: 50px;
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-family: cursive;
+        }
+        
+
+    .right{
+        height: 70px;
+        width: 250px;
+        display: flex;
+        position: absolute;
+        margin-bottom: 100px;
+        margin-top: 10px;
+        margin-left: 50px;
+        
+        
+
+        .name{
+            width: 100px;
+            height: 30px;
+            background: rgb(80, 78, 78);
+            margin: 20px 10px 10px 10px ;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            
+
+            p{
+                font-size: 10px;
+                color: white;
+                padding-left: 15px;
+                padding-top: 8px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+                'Helvetica Neue', sans-serif;
+                
+            }
+        }
+
+
+        .profile-pic{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid white;
+            margin: 10px 5px 10px 10px;
+            overflow: hidden;
+            
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+        nav{
+            padding-top: 50px;
+            margin-top: 30px;
+
+            li{
+                list-style: none;
+                width: 300px;
+                height: 50px;
+                display: flex;
+                margin-left: 10px;
+
+                i{
+                    font-size: 25px;
+                    padding-top: 9px;
+                    padding-left: 7px;
+                }
+
+                .num{
+                    width: 30px;
+                    height: 25px;
+                    background: rgb(29, 28, 28);
+                    margin-right: 40px;
+                    border-radius: 50%;
+                    margin-top: 15px;
+
+                    p{
+                        text-align: center;
+                        margin-top: 5px;
+                        font-size: 15px;
+                        color: rgb(255, 255, 255);
+                        margin-left: 2px;
+                    }
+                }
+
+                a{
+                    width: 300px;
+                    height: 50px;
+                    font-size: 16px;
+                    text-decoration: none;
+                    padding-left: 15px;
+                    padding-top: 15px;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+            }
+        }
+
+    }
+
+    .main-pane{
+        width: 750px;
+        height: 100vh;
+        overflow: scroll;
+        overflow-x: hidden;
+        border-right: 2px solid rgb(0, 153, 255);
+
+
+
+        h1{
+            font-size: 25px;
+            padding-left: 10px;
+            height: 10px;
+            color: white;
+        }
+        
+
+        .status-view{
+            width: 750px;
+            height: 85px;
+            margin-top: 20px;
+            display: flex;
+            overflow: scroll;
+            overflow-y: hidden;
+            gap: 20px;
+
+
+            .status-info{
+                width: 130px;
+                height: 50px;
+                margin-left: 20px;
+                padding-top: 10px;
+
+
+                .image{
+                    width: 50px;
+                    height: 50px;
+                    margin-left: 10px;
+                    border-radius: 50%;
+                    border: 3px solid rgb(30, 255, 0);
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                p{
+                    text-align: center;
+                    color: white;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .ano{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgb(30, 255, 0);
+            border: 8px solid rgb(255, 255, 255);
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            margin-right: 25%;
+            margin-bottom: 30px;
+        }
+
+        .posts{
+            height: 100%;
+            width: 100%;
+
+            
+            .post{
+                border: 2px solid rgb(29, 28, 28);
+                border-radius: 15px;
+                margin-top: 10px;
+                width: 400px;
+                height: 630px;
+                overflow: hidden;
+                margin-left: 20%;
+                margin-bottom: 100px;
+
+                .post-info{
+                    width: 100%;
+                    height: 55px;
+                    display: flex;
+                    background: rgb(0, 0, 0);
+                    color: white;
+
+                    .pic{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin-left: 10px;
+                        margin-top: 8px;
+
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    .post-name{
+                        font-size: 18px;
+                        margin-top: 10px;
+                        margin-left: 5px;
+                    }
+                }
+
+                .posted-video{
+                    width: 400px;
+                    height: 500px;
+                    background: rgba(0, 0, 0, 0.76);
+
+                    video{
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .acts{
+                    height: 20px;
+                    margin-left: 5px;
+                    p{
+                        font-size: 14px;
+                        color: rgb(29, 28, 28);
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    }
+                }
+
+                .vid-desc{
+                    margin-left: 5px;
+                    p{
+                        color: white;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+                    }
+                }
+
+                .svgs{
+                    gap: 30px;
+                    width: 200px;
+                    margin-left: 10px;
+
+                    span{
+                        transform: rotate(-45deg);
+                    }
+                    
+                    
+                    i{
+                        color: white;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+   
+
+
+    .pop-up{
+        width: 250px;
+        height: 150px;
+        background: rgb(29, 28, 28);
+        position: absolute;
+        bottom: 15%;
+        margin-left: 40px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        transition: .2s ease-in;
+        transform: translateX(-120%);
+
+        .story{
+            width: 110px;
+            height: 60px;
+            margin-left: 10px;
+            margin-top: 10px;
+            transition: .2s ease-out;
+            background: repeating-radial-gradient( rgb(0, 153, 255),white);
+            border-radius: 3px;
+            p{
+                font-size: 20px;
+                text-align: center;
+                margin-top: 15px;
+                color: black;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        }
+        .video{
+            width: 115px;
+            height: 60px;
+            margin-left: 5px;
+            margin-top: 10px;
+            background: rgb(0, 153, 255);
+            border-radius: 3px;
+            transition: .2s ease-out;
+            background: repeating-radial-gradient( rgb(0, 153, 255),white);
+
+            p{
+                font-size: 20px;
+                text-align: center;
+                color: black;
+                margin-top: 15px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        }
+        .image{
+            width: 230px;
+            height: 65px;
+            margin-left: 10px;
+            margin-top: 5px;
+            background: rgb(0, 153, 255);
+            transition: .2s ease-out;
+            border-radius: 3px;background: repeating-radial-gradient( rgb(0, 153, 255),white);
+            p{
+                font-size: 20px;
+                text-align: center;
+                margin-top: 15px;
+                color: black;
+                cursor: pointer;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        }
+    }
+
+    .pop{
+        transform: translateX(0%);
+    }
+
+   .pop-up div:hover{
+        border-radius: 50px;
+        
+    }
+
+
+    content i:hover{
+        color: black;
+        background: rgb(0, 153, 255);
+        transition: .2s ease-out;
+        border-radius: 50px 50px 50px 50px;
+    }
+
+
+    .search-new{
+        transform: translateX(0%);
+
+    }
+
+
+content{
+    width: 300px;
+    height: 94vh;
+    background: rgb(17, 17, 17);
+    position: fixed;
+    border-radius: 5px 5px 0px 0px;
+    top: 0;
+    margin-top: 40px;
+    border: 1.2px solid rgb(0, 153, 255);
+    transform: translateX(-100%);
+    transition: .5s ease-in;
+    
+
+
+
+   .svg{
+    
+        color: rgb(0, 153, 255);
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 5px;
+        width: 25px;
+        height: 25px;
+
+   }
+
+    form{
+        
+        input{
+            width: 250px;
+            height: 30px;
+            margin-left: 15px;
+            margin-top: 10px;
+            color: rgb(0, 153, 255);
+            border: none;
+            outline: none;
+            background: transparent;
+            border-bottom: 1.5px solid rgb(0, 153, 255);
+            font-size: 15px;
+        }
+    }
+
+    hr{
+        width: 350px;
+        margin-left: 20px;
+        margin-top: 20px;
+        border: 1.4px solid rgb(0, 153, 255);
+    }
+
+    p{
+        font-size: 30px;
+        margin-top: 100px;
+        margin-left: 40px;
+        color: rgb(29, 28, 28);
+        display: none;
+    }
+    
+    .f-box{
+        background: none;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1px;
+        border-radius: 2px;
+
+
+        .image{
+            width: 30px;
+            height: 30px;
+            margin-top: 10px;
+            margin-left: 10px;
+            border-radius: 50%;
+            overflow: hidden;
+            
+
+            img{
+             width: 100%;
+             height: 100%;
+             
+            }
+         }
+
+
+
+}}
+
+.left-bar nav li:hover{
+    background: black;
+    transition: .1s ease-out;
+    border-radius: 3px;
+    color: rgb(0, 153, 255);
+    border-left: 10px solid rgb(0, 153, 255);
+
+    a{
+        color: rgb(0, 153, 255);
+    }
+}
+
+
+.chat-displ{
+    transform: translatex(0%);
+    opacity: 100%;
+    rotate: 0deg;
+    width: 100%;
+    height: 100vh;
+}
+
+.arrowback:hover{
+    background: rgb(0, 153, 255);
+    color: black;
+    transition: .5s ease-in;
+    border: 1.5px solid black;
+    border-radius: 100px 100px;
+    
+
+}
+
+section{
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.699);
+    position: fixed;
+    top: 0;
+    transform: translatex(-150%);
+    transition: .5s ease-in;
+    
+
+    .arrowback{
+        width: 80px;
+        height: 40px;
+        border: 3px solid rgb(0, 153, 255);
+        margin-left: 20px;
+        margin-top: 30px;
+        border-radius: 10px;
+        color: rgb(0, 153, 255);
+        
+
+        i{
+            font-size: 20px;
+            padding-left: 30px;
+            padding-top: 10px;
+            animation: go 1s ease-in infinite;
+        }
+
+
+    }
+
+
+
+    .chat-page{
+        width: 1060px;
+        height: 100vh;
+        top: 0;
+        position: absolute;
+        margin-left: 300px;
+        display: flex;
+        overflow: hidden;
+        background: black;
+    animation: ani 1s ease-in alternate 1s;
+    box-shadow: 1px 1px 4px 1px rgb(0, 153, 255);
+
+        .contact{
+            width: 500px;
+            height: 100%;
+            background: rgb(17, 17, 17);
+            color: white;
+            
+
+            .ser{
+                width: 270px;
+                height: 30px;
+                display: flex;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1.5px solid rgb(0, 153, 255);
+
+                i{
+                    padding-top: 8px;
+                    padding-left: 2px;
+                    color: rgb(0, 153, 255);
+                }
+            }
+            
+            form{
+
+                input{
+                    width: 250px;
+                    height: 30px;
+                    border: none;
+                    outline: none;
+                   background: none;
+                    margin-bottom: 20px;
+                    color: white;
+                    font-size: 15px;
+
+
+                }
+            }
+
+            .cont-list{
+                width: 100%;
+                height: 461px;
+                overflow: hidden;
+                gap: 10px;
+                overflow-y: scroll;
+
+                .chat-f-box{
+                    height: 60px;
+                    display: flex;
+                    justify-content: space-between;
+                    border-radius: 5px;
+                    margin-top: 2px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    margin-bottom: 10px;
+
+                    .info{
+                        width: 200px;
+                        padding-top: 10px;
+                        margin-right: 20px;
+                        
+                        
+    
+                         .name{
+                            font-size: 15px;
+                            color: white;
+                            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+                        }
+                        
+                        
+
+                        .rlight{
+                            width: 5px;
+                            height: 5px;
+                            background-color: rgb(23, 196, 0);
+                            border-radius: 50%;
+                            
+                            
+                            
+                        }
+                    }
+
+                    .image{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin-left: 10px;
+                        margin-top: 10px;
+    
+    
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+    
+                   
+    
+
+                    
+    
+
+            }
+        }
+
+            }
+
+            .top-bar{
+                width: 100%;
+                height: 70px;
+                display: flex;
+
+                h1{
+                    font-size: 30px;
+                    margin-left: 10px;
+                    padding-top: 10px;
+                    font-family: sans-serif;
+                    color: white;
+                }
+
+            }
+        }
+
+        .chat-area{
+            width: 100%;
+            height: 515px;
+            margin-top: 0px;
+            border-bottom: 2px solid white;
+            border-left: 2px solid white;
+
+            .bottom{
+                width: 100%;
+                height: 57px;
+                background: black;
+                border-radius: 0px 0px 5px 0px;
+                display: flex;
+                overflow: hidden;
+                
+
+                .pic-send{
+                    width: 100px;
+                    height: 70px;
+                   
+
+                    i{
+                        color: rgb(0, 153, 255);
+                        font-size: 30px;
+                        padding-top: 10px;
+                        padding-left: 25px;
+                    }
+                }
+
+                form{
+
+                    display: flex;
+                #text{
+                    width: 400px;
+                    height: 40px;
+                    margin-top: px;
+                    background: black;
+                    border: none;
+                    outline: none;
+                    margin-left: 20px;
+                    color: rgb(189, 184, 184);
+                }
+
+                 .send{
+                    width: 100px;
+                    height: 40px;
+                    border-radius: 1px;
+                    border: none;
+                    background: none;
+                    color: rgb(189, 184, 184);
+
+                    i{
+                        color: rgb(0, 153, 255);
+                        padding-top: 20px;
+                        font-size: 20px;
+
+                    }
+                }
+
+            }
+            }
+            .bar{
+                width: 720px;
+                border-top-right-radius: 10px;
+                height: 70px;
+                background: black;
+                display: flex;
+                box-shadow: 1px 3px 5px 0px;
+               
+
+                .con{
+                    width: 100px;
+                    height: 40px;
+                    background: rgb(80, 78, 78);
+                    margin-left: 270px;
+                    border-radius: 5px;
+                    margin-top: 15px;
+                    display: flex;
+                    overflow: hidden;
+                    gap: 5px;
+
+                    .call{
+                        width: 40px;
+                        margin-left: 5px;
+                        i{
+                            color: rgb(0, 153, 255);
+                            font-size: 20px;
+                            padding-left: 12px;
+                            padding-top: 10px;
+                        }
+                    }
+
+                    .video{
+                        width: 40px;
+                        i{
+                            color: rgb(0, 153, 255);
+                            font-size: 20px;
+                            padding-left: 12px;
+                            padding-top: 10px;
+                        }
+                    }
+
+                }
+
+
+                .pro-pic{
+                    width: 50px;
+                    height: 50px;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    border-radius: 50%;
+                    background: rgb(29, 28, 28);
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+
+                    }
+
+
+
+                }
+                .pro-chat-info{
+                    width: 200px;
+                    margin-left: 10px;
+                    margin-top: 10px;
+
+                    p{
+                        font-size: 17px;
+                        color: white;
+                        padding-top: 5px;
+                        font-family: sans-serif;
+                    }
+                    
+                }
+            }
+
+            .chat-disp{
+                width: 100%;
+                height: 100%;
+                background: rgb(56, 56, 56);
+                background-repeat: none;
+                position: cover;
+                overflow: hidden;
+                overflow-y: scroll;
+
+
+                .send-messages{
+                    width: 400px;
+                    height: auto;
+                    display: flex;
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    float: right;
+
+                    .sender{
+                        display: flex;
+                        float: right;
+                        margin-left: 200px;
+                        margin-bottom: 10px;
+
+                        .sender-message{
+                            width: auto;
+                            height: auto;
+                            background: rgb(29, 28, 28);
+                            color: rgb(189, 184, 184);
+                            border-radius: 10px 10px 0px 10px;
+                            margin-left: px;
+                            margin-top: -5px;
+                            float: right;
+                            box-shadow: 1px 1px 5px 0px rgb(29, 28, 28);
+                          
+                            .sender-mess{
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                margin-top: 10px;
+                                font-size: 15px;
+                                font-family: Arial, Helvetica, sans-serif;
+                            }
+                        }
+
+                        .act{
+                            width: 60px;
+                            height: 20px;
+                            margin-top: 3px;
+                            font-size: 13px;
+                            float: right;
+                            margin-left: 50px;
+                            color: rgb(80, 78, 78)
+                        }
+    
+                    }
+                }
+
+                .messages{
+                    width: 500px;
+                    height: auto;
+                    display: flex;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    float: left;
+
+                    .receiver{
+                        display: flex;
+
+                       
+
+                        .message{
+                            width: auto;
+                            height: auto;
+                            background: rgb(173, 173, 173);
+                            border-radius: 10px 10px 10px 0px;
+                            margin-left: 10px;
+                            margin-top: 20px;
+                            box-shadow: 1px 1px 5px 0px rgb(29, 28, 28);
+
+                            .ori-mess{
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                margin-top: 10px;
+                                font-size: 15px;
+                                color: rgb;
+                                font-family: Arial, Helvetica, sans-serif;
+                            }
+                        }
+    
+                    }
+                    .act{
+                        width: 60px;
+                        height: 20px;
+                        margin-top: 3px;
+                        font-size: 13px;
+                        float: right;
+                        margin-left: 50px;
+                        color: rgb(80, 78, 78)
+                    }
+                }
+
+               
+            }
+        }
+
+        .controls{
+            width: 142px;
+            height: 70px;
+            margin-left: 15px;
+            
+        }
+    }
+
+
+
+.post-display-back{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.699);
+    display: none;
+
+    .post-display{
+        width: 60%;
+        height: 500px;
+        background: white;
+        margin-top: 100px;
+        margin-left: 250px;
+        border-radius: 25px;
+        display: flex;
+        overflow: hidden;
+
+        .post{
+            width: 400px;
+            height: 500px;
+
+            video{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .post-comment{
+            width: 50%;
+            background: white;
+            margin-left: 10px;
+        }
+    }
+}
+
+
+
+.privacy-note{
+    justify-content: flex-start;
+    margin-left: 10px;
+    display: inline;
+    color: white;
+    font-size: 18px;
+
+    a{
+        color: rgb(0, 153, 255);
+    }
+}
+
+
+.back-arrow:hover{
+    content: "back";
+    background: rgb(0, 153, 255);
+    color: black;
+    i{
+        color: black;
+    }
+
+}
+
+
+.follo{
+    width: 100px;
+    height: 26px;
+    background: rgb(29, 28, 28);
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.profile-page{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.699);
+    top: 0;
+    position: fixed;
+    margin: 0;
+    display: flex;
+    transform: translatex(-100%);
+    transition: .5s ease-in;
+    rotate: 50deg;
+    opacity: 0%;
+
+    .back-arrow{
+        width: 100px;
+        height: 40px;
+        border: 3px solid rgb(0, 153, 255);
+        margin-left: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+
+        i{
+            font-size: 20px;
+            margin-left: 40px;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            color: rgb(0, 153, 255);
+            animation: go 1s ease-in infinite;
+        }
+
+    }
+
+    .profile-view{
+        width: 1070px;
+        height: 100vh;
+        margin-top: 0px ;
+        background: rgb(17, 17, 17);
+        position: relative;
+        margin-left: 170px;
+        overflow-y: scroll;
+
+        .header{
+            width: 100%;
+            height: 50px;
+            display: flex;
+
+            h1{
+                font-size: 25px;
+                padding-left: 20px;
+                padding-top: 20px;
+                text-transform: capitalize;
+                color: rgb(0, 153, 255);
+            }
+        }
+
+        .profile-pic-info{
+            width: 100%;
+            height: 250px;
+            margin-top: 20px;
+            display: flex;
+
+
+            .pro-pic{
+                width: 200px;
+                height: 200px;
+                margin-left: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+
+            }
+
+            .info{
+                width: 500px;
+                margin-left: 20px;
+
+                .folo{
+                    display: flex;
+                    width: 300px;
+                    justify-content: space-between;
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                    color: rgb(116, 116, 116);
+                    cursor: pointer;
+
+
+                }
+
+                .bio{
+                    color: rgb(255, 255, 255);
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-weight: 2px;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+
+                }
+
+                a{
+                    color: black;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    background-size: 120px;
+                    background: rgb(0, 153, 255);
+                    border-radius: 3px;
+                    font-size: 15px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    
+                }
+
+                .suggest{
+                    width: 300px;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 30px;
+
+                    .sug-pic{
+                        width: 30px;
+                        height: 25px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        border-radius: 50%;
+                        overflow: hidden;
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+        .list{
+            width: 900px;
+            display: flex;
+            margin-left: 100px;
+            height: 30px;
+            margin-bottom: 10px;
+            justify-content: space-between;
+            border-bottom: 3px solid white;
+
+            li{
+                list-style: none;
+                width: 270px;
+                margin-bottom: -3px;
+                border-bottom: translatex(100%);
+               
+                i{
+                    font-size: 25px;
+                    text-align: center;
+                    padding-left: 120px;
+                }
+            }
+        }
+
+        .act-display{
+            width: 900px;
+            height: 54vh;
+            margin-left: 100px;
+            margin-top: 10px;
+            border-radius: 10px;
+            
+
+            .posts-page{
+                width: 100%;
+                height: 100%;
+
+                h1{
+                    font-size: 20px;
+                    text-align: center;
+                    margin-top: 1px;
+                    color: rgb(0, 153, 255);
+                    margin-bottom: 5px;
+                }
+
+                .disp{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    overflow: scroll;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    gap: 5px;
+
+
+                    .posted{
+                        width: 220px;
+                        height: 300px;
+                        border-radius: 5px;
+                        overflow: hidden;
+
+                        .cover{
+                            width: 220px;
+                            height: 300px;
+                            border-radius: 5px;
+                            background: blue;
+                            opacity: 0%;
+                            position: absolute;
+                        }
+
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                            
+                        }
+                        video{
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+.right:hover{
+    animation: right 1s ease-in infinite;
+}
+
+.chat-lost{
+    transform: translatex(0%);
+    rotate: 0deg;
+    opacity: 100%;
+}
+
+
+.disp .posted:hover{
+    box-shadow: 0px 2px 5px 1px rgb(0, 153, 255);
+}
+
+
+.list li:hover{
+    border-bottom: 3px solid rgb(0, 153, 255);
+    transition: .1s ease-in;
+    i{
+        color: rgb(0, 153, 255);
+    }
+}
+
+
+
+@keyframes right{
+
+    50%{
+        transform: translateX(10%);
+    }
+}
+
+@keyframes go{
+
+    50%{
+        transform: translateX(25%);
+    }
+}
+
+
+@keyframes mess-note{
+    0%{
+        transform: translateX(-200%);
+    }
+
+    30%{
+        transform:translateX(0%);
+        color: white;
+    }
+    85%{
+        transform:translateX(0%);
+        color: white;
+    }
+
+    100%{
+        transform: translateX(-200%);
+
+
+    }
+}
+
+
+
+
+
+@keyframes ani{
+    from{
+        transform: translatez(-200%);
+        opacity: 0%;
+    }
+    to{
+        transform: translatez(0%);
+    }
+}
+
+
+@keyframes blink{
+    to{
+        background: none;
+        border: 2px solid red;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    .main{
+        width: 80%;
+        height: 100vh;
+        margin-left: 300px;
+        display: flex;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+                .right-pane{
+            width: 280px;
+            height: 100%;
+    
+            h1{
+                text-align: center;
+                height: 40px;
+            }
+    
+            hr{
+                width:200px;
+                margin-left: 40px;
+            } 
+    
+            .followers-list{
+                width: 100%;
+                overflow: scroll;
+                gap: 5px;
+    
+    
+    
+                .f-box{
+                    background: rgb(37, 37, 37);
+                    height: 60px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 3px;
+                    border-radius: 0px;
+                    margin-left: 10px;
+    
+                    .info{
+                        width: 200px;
+                        padding-top: 10px;
+                        margin-left: 20px;
+                        
+    
+                         .name{
+                            font-size: 15px;
+    
+                        }
+                        
+                        .time{
+                            color: rgb(30, 255, 0);
+                            display: none;
+                        }
+                        
+                        .rtime{
+                            color: rgb(255, 0, 0);
+                           
+                        }
+    
+                        .light{
+                            width: 5px;
+                            height: 5px;
+                            background-color: rgb(30, 255, 0);
+                            border-radius: 50%;
+                            display: none;
+                           
+                            
+                        }
+    
+                        .rlight{
+                            width: 5px;
+                            height: 5px;
+                            background-color: rgb(255, 0, 0);
+                            border-radius: 50%;
+                            animation: blink 1s ease-in-out infinite;
+                            
+                            
+                            
+                        }
+                    }
+    
+                    button{
+                        width: 100px;
+                        height: 30px;
+                        margin-right: 15px;
+                        margin-top: 12px;
+                        border-radius: 5px;
+                        border: none;
+                        background: rgb(80, 78, 78);
+                        font-size: 15px;
+                        color: white;
+                        
+                        
+                    }
+    
+                    .follow{
+                        width: 120px;
+                        height: 40px;
+                        margin-right: 15px;
+                        margin-top: 12px;
+                        border-radius: 5px;
+                        border: none;
+                        background: rgb(30, 255, 0);
+                        font-size: 15px;
+                        color: white;
+                        
+                    }
+                    
+    
+                    .image{
+                        width: 40px;
+                        height: 30px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin-left: 10px;
+                        margin-top: 15px;
+    
+    
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+    .left-bar{
+        height: 100vh;
+        width: 300px;
+        background: rgb(17, 17, 17);
+        overflow: hidden;
+        color: white;
+        position: fixed;
+        border-right: 2px solid rgb(0, 153, 255);
+        
+        
+
+
+        .profile-pic-active{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 3px solid greenyellow;
+            margin: 10px 5px 10px 10px;
+            overflow: hidden;
+            
+            
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+
+
+        .logo{
+            font-size: 30px;
+            margin-top: 50px;
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-family: cursive;
+        }
+        
+
+    .right{
+        height: 70px;
+        width: 250px;
+        display: flex;
+        position: absolute;
+        margin-bottom: 100px;
+        margin-top: 10px;
+        margin-left: 50px;
+        
+        
+
+        .name{
+            width: 100px;
+            height: 30px;
+            background: rgb(80, 78, 78);
+            margin: 20px 10px 10px 10px ;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            
+
+            p{
+                font-size: 10px;
+                color: white;
+                padding-left: 15px;
+                padding-top: 8px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+                'Helvetica Neue', sans-serif;
+                
+            }
+        }
+
+
+        .profile-pic{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid white;
+            margin: 10px 5px 10px 10px;
+            overflow: hidden;
+            
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+        nav{
+            padding-top: 50px;
+            margin-top: 30px;
+
+            li{
+                list-style: none;
+                width: 300px;
+                height: 50px;
+                display: flex;
+                margin-left: 10px;
+
+                i{
+                    font-size: 25px;
+                    padding-top: 9px;
+                    padding-left: 7px;
+                }
+
+                .num{
+                    width: 30px;
+                    height: 25px;
+                    background: rgb(29, 28, 28);
+                    margin-right: 40px;
+                    border-radius: 50%;
+                    margin-top: 15px;
+
+                    p{
+                        text-align: center;
+                        margin-top: 5px;
+                        font-size: 15px;
+                        color: rgb(255, 255, 255);
+                        margin-left: 2px;
+                    }
+                }
+
+                a{
+                    width: 300px;
+                    height: 50px;
+                    font-size: 16px;
+                    text-decoration: none;
+                    padding-left: 15px;
+                    padding-top: 15px;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+            }
+        }
+
+    }
+
+    .main-pane{
+        width: 750px;
+        height: 100vh;
+        overflow: scroll;
+        overflow-x: hidden;
+        border-right: 2px solid rgb(0, 153, 255);
+
+
+
+        h1{
+            font-size: 25px;
+            padding-left: 10px;
+            height: 10px;
+            color: white;
+        }
+        
+
+        .status-view{
+            width: 750px;
+            height: 85px;
+            margin-top: 20px;
+            display: flex;
+            overflow: scroll;
+            overflow-y: hidden;
+            gap: 20px;
+
+
+            .status-info{
+                width: 130px;
+                height: 50px;
+                margin-left: 20px;
+                padding-top: 10px;
+
+
+                .image{
+                    width: 50px;
+                    height: 50px;
+                    margin-left: 10px;
+                    border-radius: 50%;
+                    border: 3px solid rgb(30, 255, 0);
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                p{
+                    text-align: center;
+                    color: white;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .ano{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgb(30, 255, 0);
+            border: 8px solid rgb(255, 255, 255);
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            margin-right: 25%;
+            margin-bottom: 30px;
+        }
+
+        .posts{
+            height: 100%;
+            width: 100%;
+
+            
+            .post{
+                border: 2px solid rgb(29, 28, 28);
+                border-radius: 15px;
+                margin-top: 10px;
+                width: 400px;
+                height: 630px;
+                overflow: hidden;
+                margin-left: 20%;
+                margin-bottom: 100px;
+
+                .post-info{
+                    width: 100%;
+                    height: 55px;
+                    display: flex;
+                    background: rgb(0, 0, 0);
+                    color: white;
+
+                    .pic{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin-left: 10px;
+                        margin-top: 8px;
+
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    .post-name{
+                        font-size: 18px;
+                        margin-top: 10px;
+                        margin-left: 5px;
+                    }
+                }
+
+                .posted-video{
+                    width: 400px;
+                    height: 500px;
+                    background: rgba(0, 0, 0, 0.76);
+
+                    video{
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .acts{
+                    height: 20px;
+                    margin-left: 5px;
+                    p{
+                        font-size: 14px;
+                        color: rgb(29, 28, 28);
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    }
+                }
+
+                .vid-desc{
+                    margin-left: 5px;
+                    p{
+                        color: white;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+                    }
+                }
+
+                .svgs{
+                    gap: 30px;
+                    width: 200px;
+                    margin-left: 10px;
+
+                    span{
+                        transform: rotate(-45deg);
+                    }
+                    
+                    
+                    i{
+                        color: white;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+   
+
+
+    .pop-up{
+        width: 250px;
+        height: 150px;
+        background: rgb(29, 28, 28);
+        position: absolute;
+        bottom: 15%;
+        margin-left: 40px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        transition: .2s ease-in;
+        transform: translateX(-120%);
+
+        .story{
+            width: 110px;
+            height: 60px;
+            margin-left: 10px;
+            margin-top: 10px;
+            transition: .2s ease-out;
+            background: repeating-radial-gradient( rgb(0, 153, 255),white);
+            border-radius: 3px;
+            p{
+                font-size: 20px;
+                text-align: center;
+                margin-top: 15px;
+                color: black;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        }
+        .video{
+            width: 115px;
+            height: 60px;
+            margin-left: 5px;
+            margin-top: 10px;
+            background: rgb(0, 153, 255);
+            border-radius: 3px;
+            transition: .2s ease-out;
+            background: repeating-radial-gradient( rgb(0, 153, 255),white);
+
+            p{
+                font-size: 20px;
+                text-align: center;
+                color: black;
+                margin-top: 15px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        }
+        .image{
+            width: 230px;
+            height: 65px;
+            margin-left: 10px;
+            margin-top: 5px;
+            background: rgb(0, 153, 255);
+            transition: .2s ease-out;
+            border-radius: 3px;background: repeating-radial-gradient( rgb(0, 153, 255),white);
+            p{
+                font-size: 20px;
+                text-align: center;
+                margin-top: 15px;
+                color: black;
+                cursor: pointer;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        }
+    }
+
+    .pop{
+        transform: translateX(0%);
+    }
+
+   .pop-up div:hover{
+        border-radius: 50px;
+        
+    }
+
+
+    content i:hover{
+        color: black;
+        background: rgb(0, 153, 255);
+        transition: .2s ease-out;
+        border-radius: 50px 50px 50px 50px;
+    }
+
+
+    .search-new{
+        transform: translateX(0%);
+
+    }
+
+
+content{
+    width: 300px;
+    height: 94vh;
+    background: rgb(17, 17, 17);
+    position: fixed;
+    border-radius: 5px 5px 0px 0px;
+    top: 0;
+    margin-top: 40px;
+    border: 1.2px solid rgb(0, 153, 255);
+    transform: translateX(-100%);
+    transition: .5s ease-in;
+    
+
+
+
+   .svg{
+    
+        color: rgb(0, 153, 255);
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 5px;
+        width: 25px;
+        height: 25px;
+
+   }
+
+    form{
+        
+        input{
+            width: 250px;
+            height: 30px;
+            margin-left: 15px;
+            margin-top: 10px;
+            color: rgb(0, 153, 255);
+            border: none;
+            outline: none;
+            background: transparent;
+            border-bottom: 1.5px solid rgb(0, 153, 255);
+            font-size: 15px;
+        }
+    }
+
+    hr{
+        width: 350px;
+        margin-left: 20px;
+        margin-top: 20px;
+        border: 1.4px solid rgb(0, 153, 255);
+    }
+
+    p{
+        font-size: 30px;
+        margin-top: 100px;
+        margin-left: 40px;
+        color: rgb(29, 28, 28);
+        display: none;
+    }
+    
+    .f-box{
+        background: none;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1px;
+        border-radius: 2px;
+
+
+        .image{
+            width: 30px;
+            height: 30px;
+            margin-top: 10px;
+            margin-left: 10px;
+            border-radius: 50%;
+            overflow: hidden;
+            
+
+            img{
+             width: 100%;
+             height: 100%;
+             
+            }
+         }
+
+
+
+}}
+
+.left-bar nav li:hover{
+    background: black;
+    transition: .1s ease-out;
+    border-radius: 3px;
+    color: rgb(0, 153, 255);
+    border-left: 10px solid rgb(0, 153, 255);
+
+    a{
+        color: rgb(0, 153, 255);
+    }
+}
+
+
+.chat-displ{
+    transform: translatex(0%);
+    opacity: 100%;
+    rotate: 0deg;
+    width: 100%;
+    height: 100vh;
+}
+
+.arrowback:hover{
+    background: rgb(0, 153, 255);
+    color: black;
+    transition: .5s ease-in;
+    border: 1.5px solid black;
+    border-radius: 100px 100px;
+    
+
+}
+
+section{
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.699);
+    position: fixed;
+    top: 0;
+    transform: translatex(-150%);
+    transition: .5s ease-in;
+    
+
+    .arrowback{
+        width: 80px;
+        height: 40px;
+        border: 3px solid rgb(0, 153, 255);
+        margin-left: 20px;
+        margin-top: 30px;
+        border-radius: 10px;
+        color: rgb(0, 153, 255);
+        
+
+        i{
+            font-size: 20px;
+            padding-left: 30px;
+            padding-top: 10px;
+            animation: go 1s ease-in infinite;
+        }
+
+
+    }
+
+
+
+    .chat-page{
+        width: 1060px;
+        height: 100vh;
+        top: 0;
+        position: absolute;
+        margin-left: 300px;
+        display: flex;
+        overflow: hidden;
+        background: black;
+    animation: ani 1s ease-in alternate 1s;
+    box-shadow: 1px 1px 4px 1px rgb(0, 153, 255);
+
+        .contact{
+            width: 500px;
+            height: 100%;
+            background: rgb(17, 17, 17);
+            color: white;
+            
+
+            .ser{
+                width: 270px;
+                height: 30px;
+                display: flex;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1.5px solid rgb(0, 153, 255);
+
+                i{
+                    padding-top: 8px;
+                    padding-left: 2px;
+                    color: rgb(0, 153, 255);
+                }
+            }
+            
+            form{
+
+                input{
+                    width: 250px;
+                    height: 30px;
+                    border: none;
+                    outline: none;
+                   background: none;
+                    margin-bottom: 20px;
+                    color: white;
+                    font-size: 15px;
+
+
+                }
+            }
+
+            .cont-list{
+                width: 100%;
+                height: 461px;
+                overflow: hidden;
+                gap: 10px;
+                overflow-y: scroll;
+
+                .chat-f-box{
+                    height: 60px;
+                    display: flex;
+                    justify-content: space-between;
+                    border-radius: 5px;
+                    margin-top: 2px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    margin-bottom: 10px;
+
+                    .info{
+                        width: 200px;
+                        padding-top: 10px;
+                        margin-right: 20px;
+                        
+                        
+    
+                         .name{
+                            font-size: 15px;
+                            color: white;
+                            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+                        }
+                        
+                        
+
+                        .rlight{
+                            width: 5px;
+                            height: 5px;
+                            background-color: rgb(23, 196, 0);
+                            border-radius: 50%;
+                            
+                            
+                            
+                        }
+                    }
+
+                    .image{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin-left: 10px;
+                        margin-top: 10px;
+    
+    
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+    
+                   
+    
+
+                    
+    
+
+            }
+        }
+
+            }
+
+            .top-bar{
+                width: 100%;
+                height: 70px;
+                display: flex;
+
+                h1{
+                    font-size: 30px;
+                    margin-left: 10px;
+                    padding-top: 10px;
+                    font-family: sans-serif;
+                    color: white;
+                }
+
+            }
+        }
+
+        .chat-area{
+            width: 100%;
+            height: 515px;
+            margin-top: 0px;
+            border-bottom: 2px solid white;
+            border-left: 2px solid white;
+
+            .bottom{
+                width: 100%;
+                height: 57px;
+                background: black;
+                border-radius: 0px 0px 5px 0px;
+                display: flex;
+                overflow: hidden;
+                
+
+                .pic-send{
+                    width: 100px;
+                    height: 70px;
+                   
+
+                    i{
+                        color: rgb(0, 153, 255);
+                        font-size: 30px;
+                        padding-top: 10px;
+                        padding-left: 25px;
+                    }
+                }
+
+                form{
+
+                    display: flex;
+                #text{
+                    width: 400px;
+                    height: 40px;
+                    margin-top: px;
+                    background: black;
+                    border: none;
+                    outline: none;
+                    margin-left: 20px;
+                    color: rgb(189, 184, 184);
+                }
+
+                 .send{
+                    width: 100px;
+                    height: 40px;
+                    border-radius: 1px;
+                    border: none;
+                    background: none;
+                    color: rgb(189, 184, 184);
+
+                    i{
+                        color: rgb(0, 153, 255);
+                        padding-top: 20px;
+                        font-size: 20px;
+
+                    }
+                }
+
+            }
+            }
+            .bar{
+                width: 720px;
+                border-top-right-radius: 10px;
+                height: 70px;
+                background: black;
+                display: flex;
+                box-shadow: 1px 3px 5px 0px;
+               
+
+                .con{
+                    width: 100px;
+                    height: 40px;
+                    background: rgb(80, 78, 78);
+                    margin-left: 270px;
+                    border-radius: 5px;
+                    margin-top: 15px;
+                    display: flex;
+                    overflow: hidden;
+                    gap: 5px;
+
+                    .call{
+                        width: 40px;
+                        margin-left: 5px;
+                        i{
+                            color: rgb(0, 153, 255);
+                            font-size: 20px;
+                            padding-left: 12px;
+                            padding-top: 10px;
+                        }
+                    }
+
+                    .video{
+                        width: 40px;
+                        i{
+                            color: rgb(0, 153, 255);
+                            font-size: 20px;
+                            padding-left: 12px;
+                            padding-top: 10px;
+                        }
+                    }
+
+                }
+
+
+                .pro-pic{
+                    width: 50px;
+                    height: 50px;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    border-radius: 50%;
+                    background: rgb(29, 28, 28);
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+
+                    }
+
+
+
+                }
+                .pro-chat-info{
+                    width: 200px;
+                    margin-left: 10px;
+                    margin-top: 10px;
+
+                    p{
+                        font-size: 17px;
+                        color: white;
+                        padding-top: 5px;
+                        font-family: sans-serif;
+                    }
+                    
+                }
+            }
+
+            .chat-disp{
+                width: 100%;
+                height: 100%;
+                background: rgb(56, 56, 56);
+                background-repeat: none;
+                position: cover;
+                overflow: hidden;
+                overflow-y: scroll;
+
+
+                .send-messages{
+                    width: 400px;
+                    height: auto;
+                    display: flex;
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    float: right;
+
+                    .sender{
+                        display: flex;
+                        float: right;
+                        margin-left: 200px;
+                        margin-bottom: 10px;
+
+                        .sender-message{
+                            width: auto;
+                            height: auto;
+                            background: rgb(29, 28, 28);
+                            color: rgb(189, 184, 184);
+                            border-radius: 10px 10px 0px 10px;
+                            margin-left: px;
+                            margin-top: -5px;
+                            float: right;
+                            box-shadow: 1px 1px 5px 0px rgb(29, 28, 28);
+                          
+                            .sender-mess{
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                margin-top: 10px;
+                                font-size: 15px;
+                                font-family: Arial, Helvetica, sans-serif;
+                            }
+                        }
+
+                        .act{
+                            width: 60px;
+                            height: 20px;
+                            margin-top: 3px;
+                            font-size: 13px;
+                            float: right;
+                            margin-left: 50px;
+                            color: rgb(80, 78, 78)
+                        }
+    
+                    }
+                }
+
+                .messages{
+                    width: 500px;
+                    height: auto;
+                    display: flex;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    float: left;
+
+                    .receiver{
+                        display: flex;
+
+                       
+
+                        .message{
+                            width: auto;
+                            height: auto;
+                            background: rgb(173, 173, 173);
+                            border-radius: 10px 10px 10px 0px;
+                            margin-left: 10px;
+                            margin-top: 20px;
+                            box-shadow: 1px 1px 5px 0px rgb(29, 28, 28);
+
+                            .ori-mess{
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                margin-top: 10px;
+                                font-size: 15px;
+                                color: rgb;
+                                font-family: Arial, Helvetica, sans-serif;
+                            }
+                        }
+    
+                    }
+                    .act{
+                        width: 60px;
+                        height: 20px;
+                        margin-top: 3px;
+                        font-size: 13px;
+                        float: right;
+                        margin-left: 50px;
+                        color: rgb(80, 78, 78)
+                    }
+                }
+
+               
+            }
+        }
+
+        .controls{
+            width: 142px;
+            height: 70px;
+            margin-left: 15px;
+            
+        }
+    }
+
+
+
+.post-display-back{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.699);
+    display: none;
+
+    .post-display{
+        width: 60%;
+        height: 500px;
+        background: white;
+        margin-top: 100px;
+        margin-left: 250px;
+        border-radius: 25px;
+        display: flex;
+        overflow: hidden;
+
+        .post{
+            width: 400px;
+            height: 500px;
+
+            video{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .post-comment{
+            width: 50%;
+            background: white;
+            margin-left: 10px;
+        }
+    }
+}
+
+
+
+.privacy-note{
+    justify-content: flex-start;
+    margin-left: 10px;
+    display: inline;
+    color: white;
+    font-size: 18px;
+
+    a{
+        color: rgb(0, 153, 255);
+    }
+}
+
+
+.back-arrow:hover{
+    content: "back";
+    background: rgb(0, 153, 255);
+    color: black;
+    i{
+        color: black;
+    }
+
+}
+
+
+.follo{
+    width: 100px;
+    height: 26px;
+    background: rgb(29, 28, 28);
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.profile-page{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.699);
+    top: 0;
+    position: fixed;
+    margin: 0;
+    display: flex;
+    transform: translatex(-100%);
+    transition: .5s ease-in;
+    rotate: 50deg;
+    opacity: 0%;
+
+    .back-arrow{
+        width: 100px;
+        height: 40px;
+        border: 3px solid rgb(0, 153, 255);
+        margin-left: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+
+        i{
+            font-size: 20px;
+            margin-left: 40px;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            color: rgb(0, 153, 255);
+            animation: go 1s ease-in infinite;
+        }
+
+    }
+
+    .profile-view{
+        width: 1070px;
+        height: 100vh;
+        margin-top: 0px ;
+        background: rgb(17, 17, 17);
+        position: relative;
+        margin-left: 170px;
+        overflow-y: scroll;
+
+        .header{
+            width: 100%;
+            height: 50px;
+            display: flex;
+
+            h1{
+                font-size: 25px;
+                padding-left: 20px;
+                padding-top: 20px;
+                text-transform: capitalize;
+                color: rgb(0, 153, 255);
+            }
+        }
+
+        .profile-pic-info{
+            width: 100%;
+            height: 250px;
+            margin-top: 20px;
+            display: flex;
+
+
+            .pro-pic{
+                width: 200px;
+                height: 200px;
+                margin-left: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+
+            }
+
+            .info{
+                width: 500px;
+                margin-left: 20px;
+
+                .folo{
+                    display: flex;
+                    width: 300px;
+                    justify-content: space-between;
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                    color: rgb(116, 116, 116);
+                    cursor: pointer;
+
+
+                }
+
+                .bio{
+                    color: rgb(255, 255, 255);
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-weight: 2px;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+
+                }
+
+                a{
+                    color: black;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    background-size: 120px;
+                    background: rgb(0, 153, 255);
+                    border-radius: 3px;
+                    font-size: 15px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    
+                }
+
+                .suggest{
+                    width: 300px;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 30px;
+
+                    .sug-pic{
+                        width: 30px;
+                        height: 25px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        border-radius: 50%;
+                        overflow: hidden;
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+        .list{
+            width: 900px;
+            display: flex;
+            margin-left: 100px;
+            height: 30px;
+            margin-bottom: 10px;
+            justify-content: space-between;
+            border-bottom: 3px solid white;
+
+            li{
+                list-style: none;
+                width: 270px;
+                margin-bottom: -3px;
+                border-bottom: translatex(100%);
+               
+                i{
+                    font-size: 25px;
+                    text-align: center;
+                    padding-left: 120px;
+                }
+            }
+        }
+
+        .act-display{
+            width: 900px;
+            height: 54vh;
+            margin-left: 100px;
+            margin-top: 10px;
+            border-radius: 10px;
+            
+
+            .posts-page{
+                width: 100%;
+                height: 100%;
+
+                h1{
+                    font-size: 20px;
+                    text-align: center;
+                    margin-top: 1px;
+                    color: rgb(0, 153, 255);
+                    margin-bottom: 5px;
+                }
+
+                .disp{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    overflow: scroll;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    gap: 5px;
+
+
+                    .posted{
+                        width: 220px;
+                        height: 300px;
+                        border-radius: 5px;
+                        overflow: hidden;
+
+                        .cover{
+                            width: 220px;
+                            height: 300px;
+                            border-radius: 5px;
+                            background: blue;
+                            opacity: 0%;
+                            position: absolute;
+                        }
+
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                            
+                        }
+                        video{
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+.right:hover{
+    animation: right 1s ease-in infinite;
+}
+
+.chat-lost{
+    transform: translatex(0%);
+    rotate: 0deg;
+    opacity: 100%;
+}
+
+
+.disp .posted:hover{
+    box-shadow: 0px 2px 5px 1px rgb(0, 153, 255);
+}
+
+
+.list li:hover{
+    border-bottom: 3px solid rgb(0, 153, 255);
+    transition: .1s ease-in;
+    i{
+        color: rgb(0, 153, 255);
+    }
+}
+
+
+
+@keyframes right{
+
+    50%{
+        transform: translateX(10%);
+    }
+}
+
+@keyframes go{
+
+    50%{
+        transform: translateX(25%);
+    }
+}
+
+
+@keyframes mess-note{
+    0%{
+        transform: translateX(-200%);
+    }
+
+    30%{
+        transform:translateX(0%);
+        color: white;
+    }
+    85%{
+        transform:translateX(0%);
+        color: white;
+    }
+
+    100%{
+        transform: translateX(-200%);
+
+
+    }
+}
+
+
+
+
+
+@keyframes ani{
+    from{
+        transform: translatez(-200%);
+        opacity: 0%;
+    }
+    to{
+        transform: translatez(0%);
+    }
+}
+
+
+@keyframes blink{
+    to{
+        background: none;
+        border: 2px solid red;
+    }
+}
+
+
+}
+
+
